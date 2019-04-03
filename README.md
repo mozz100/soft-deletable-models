@@ -2,6 +2,19 @@
 
 A small, toy Django app to illustrate some of the issues with using `SoftDeletableModel`.
 
+### Explore in a notebook
+
+To run a notebook server:
+
+```bash
+pip install -r requirements.txt  # recommend using a virtualenv or Pipenv
+./manage.py shell_plus --notebook  # open http://localhost:8888...
+```
+
+Then open `Soft deletable models.ipynb`.
+
+### Failing tests
+
 The tests demonstrate exactly the same code running against "normal" models and soft-deletable models.
 
 To run the tests:
@@ -10,6 +23,8 @@ To run the tests:
 pip install -r requirements.txt  # recommend using a virtualenv or Pipenv
 ./manage.py test -v2
 ```
+
+The output demonstrates that the code behaves as expected using normal models, but the tests fail when run against the soft-deletable models.  Examine the test code in `groups/tests.py` to see for yourself.
 
 Output:
 
