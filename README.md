@@ -1,6 +1,6 @@
 ## Soft deletion demo app
 
-A small, toy Django app to illustrate some of the issues with using `SoftDeletableModel`.
+A small, toy Django app to illustrate some of the issues with using [`SoftDeletableModel`](https://django-model-utils.readthedocs.io/en/latest/models.html#softdeletablemodel).
 
 ### Explore in a notebook
 
